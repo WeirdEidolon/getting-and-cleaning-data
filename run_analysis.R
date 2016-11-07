@@ -137,9 +137,6 @@ load.data <- function(data.zip.file="UCI HAR Dataset.zip",
         # load the cached csv dataset if it has been generated
         print("loading cached dataset")
         df.all.data <- read.csv("cache.csv")
-        
-        # write.csv added an X column for the row index, we can drop that
-        df.all.data <- df.all.data[, !(names(df.all.data) %in% "X")]
     } else {
         unzip(data.zip.file)
     
@@ -153,7 +150,8 @@ load.data <- function(data.zip.file="UCI HAR Dataset.zip",
         # width data files
         write.csv(df.all.data, "cache.csv", row.names=FALSE)
     }
-
+    
+    # return the data frame
     df.all.data
 }
 
