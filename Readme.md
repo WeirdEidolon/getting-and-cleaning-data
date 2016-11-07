@@ -1,5 +1,5 @@
 # Summary
-this code summarizes movement and position data collected in a sutdy for wearble devices, producing a dataset that contains the averages of each mean and standard deviation statistic for each subject and activity from the original dataset.
+this code summarizes movement and position data collected in a study for wearble devices, producing a dataset that contains the averages of each mean and standard deviation statistic for each subject and activity from the original dataset.
 
 # Files
 * analysis.csv - the resulting processed sensor data. see below for more details on the contents.
